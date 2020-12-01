@@ -9,14 +9,10 @@
 package com.parse.starter;
 
 import android.app.Application;
-import android.util.Log;
 
 import com.parse.Parse;
 import com.parse.ParseACL;
-import com.parse.ParseException;
-import com.parse.ParseObject;
 import com.parse.ParseUser;
-import com.parse.SaveCallback;
 
 public class StarterApplication extends Application {
 
@@ -29,27 +25,11 @@ public class StarterApplication extends Application {
 
     // Add your initialization code here
     Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())
-            .applicationId("myappID")
-            .clientKey("xR3NAjUNl4Qf")
-            .server("http://18.189.28.235/parse/")
+            .applicationId("")
+            .clientKey("")
+            .server("")
             .build()
     );
-
-    ParseObject object = new ParseObject("ExampleObject");
-    object.put("myNumber", "123");
-    object.put("myString", "rob");
-
-    object.saveInBackground(new SaveCallback () {
-      @Override
-      public void done(ParseException ex) {
-        if (ex == null) {
-          Log.i("Parse Result", "Successful!");
-        } else {
-          Log.i("Parse Result", "Failed" + ex.toString());
-        }
-      }
-    });
-
 
     ParseUser.enableAutomaticUser();
 
