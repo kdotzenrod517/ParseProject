@@ -12,12 +12,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.parse.GetCallback;
+import com.parse.FindCallback;
 import com.parse.ParseAnalytics;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
-import com.parse.SaveCallback;
+
+import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -28,31 +29,21 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    ParseObject tweet = new ParseObject("tweet");
-    tweet.put("username", "napoleon");
-    tweet.put("tweet", "i like carrots");
-    tweet.saveInBackground(new SaveCallback() {
-      @Override
-      public void done(ParseException e) {
-        if(e == null) {
-          Log.i("Success", "We saved a tweet");
-        } else {
-          e.printStackTrace();
-        }
-      }
-    });
+    ParseQuery<ParseObject> query = ParseQuery.getQuery("Score");
 
-    ParseQuery<ParseObject> query = new ParseQuery<>("tweet");
-    query.getInBackground("Uo5enYYG5U", new GetCallback<ParseObject>() {
-      @Override
-      public void done(ParseObject object, ParseException e) {
-        if(e == null && object != null) {
-          object.put("tweet", "i like basil");
-          object.saveInBackground();
+    query.whereGreaterThan("score", 50);
 
-          Log.i("username", object.getString("username"));
-          Log.i("tweet", object.getString("tweet"));
-        }
+    query.findInBackground(new FindCallback<ParseObject>() {
+      @Override
+      public void done(List<ParseObject> objects, ParseException e) {
+          if(e == null && objects.size() > 0){
+              for(ParseObject score : objects){
+                Log.i("username", score.getString("username"));
+                Log.i("score", Integer.toString(score.getInt("score")));
+                score.put("score", score.getInt("score") + 20);
+                score.saveInBackground();
+              }
+          }
       }
     });
 
