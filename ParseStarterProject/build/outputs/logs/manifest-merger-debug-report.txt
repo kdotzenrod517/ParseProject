@@ -4,7 +4,7 @@ ADDED from C:\Users\kdotz\StudioProjects\AndroidOCourse\Parse-Server-Starter-Pro
 INJECTED from C:\Users\kdotz\StudioProjects\AndroidOCourse\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:9:1-38:12
 INJECTED from C:\Users\kdotz\StudioProjects\AndroidOCourse\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:9:1-38:12
 INJECTED from C:\Users\kdotz\StudioProjects\AndroidOCourse\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:9:1-38:12
-MERGED from [com.android.support.constraint:constraint-layout:2.0.2] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.2.aar\94bf49225a19d7a23f0c7a0194808d77\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support.constraint:constraint-layout:2.0.4] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.4.aar\3a28c01c4b79bfdb88c05b01ef446f05\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.gms:play-services:12.0.1] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\play-services-12.0.1.aar\132f34825d04dbaf1f530e310346ee53\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-cast-framework:12.0.1] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-12.0.1.aar\5f835f5efd600a29a4a9fa1e6ed217db\AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.gms:play-services-cast:12.0.1] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\play-services-cast-12.0.1.aar\f9eb357aa760c903b656017ef86118b3\AndroidManifest.xml:17:1-24:12
@@ -215,8 +215,8 @@ ADDED from C:\Users\kdotz\StudioProjects\AndroidOCourse\Parse-Server-Starter-Pro
 		ADDED from C:\Users\kdotz\StudioProjects\AndroidOCourse\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:16:22-76
 application
 ADDED from C:\Users\kdotz\StudioProjects\AndroidOCourse\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:18:5-36:19
-MERGED from [com.android.support.constraint:constraint-layout:2.0.2] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.2.aar\94bf49225a19d7a23f0c7a0194808d77\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:2.0.2] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.2.aar\94bf49225a19d7a23f0c7a0194808d77\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:2.0.4] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.4.aar\3a28c01c4b79bfdb88c05b01ef446f05\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:2.0.4] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.4.aar\3a28c01c4b79bfdb88c05b01ef446f05\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services:12.0.1] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\play-services-12.0.1.aar\132f34825d04dbaf1f530e310346ee53\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services:12.0.1] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\play-services-12.0.1.aar\132f34825d04dbaf1f530e310346ee53\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-cast-framework:12.0.1] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-12.0.1.aar\5f835f5efd600a29a4a9fa1e6ed217db\AndroidManifest.xml:7:5-12:19
@@ -445,8 +445,8 @@ uses-sdk
 INJECTED from C:\Users\kdotz\StudioProjects\AndroidOCourse\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\kdotz\StudioProjects\AndroidOCourse\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml
 INJECTED from C:\Users\kdotz\StudioProjects\AndroidOCourse\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml
-MERGED from [com.android.support.constraint:constraint-layout:2.0.2] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.2.aar\94bf49225a19d7a23f0c7a0194808d77\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:2.0.2] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.2.aar\94bf49225a19d7a23f0c7a0194808d77\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:2.0.4] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.4.aar\3a28c01c4b79bfdb88c05b01ef446f05\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:2.0.4] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.4.aar\3a28c01c4b79bfdb88c05b01ef446f05\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services:12.0.1] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\play-services-12.0.1.aar\132f34825d04dbaf1f530e310346ee53\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services:12.0.1] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\play-services-12.0.1.aar\132f34825d04dbaf1f530e310346ee53\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-cast-framework:12.0.1] C:\Users\kdotz\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-12.0.1.aar\5f835f5efd600a29a4a9fa1e6ed217db\AndroidManifest.xml:5:5-44
