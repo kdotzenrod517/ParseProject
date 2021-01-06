@@ -1362,6 +1362,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backgroundLayout
 id background_image_view
 id background_place_holder_image_view
 id barrier
@@ -1486,7 +1487,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView
 id index_entity_types
 id info
 id instant_message
@@ -1512,6 +1512,7 @@ id live_stream_indicator
 id live_stream_seek_bar
 id loading_indicator
 id login
+id logo
 id logo_only
 id match_global_nicknames
 id match_parent
@@ -1892,6 +1893,7 @@ string s5
 string s6
 string s7
 string search_menu_title
+string sign_up
 string status_bar_notification_info_overflow
 string tagmanager_preview_dialog_button
 string tagmanager_preview_dialog_message
