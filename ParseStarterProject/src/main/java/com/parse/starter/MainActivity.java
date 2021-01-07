@@ -8,6 +8,7 @@
  */
 package com.parse.starter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -40,6 +41,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageView logo;
     ConstraintLayout backgroundLayout;
 
+    public void showUserList() {
+        Intent intent = new Intent(getApplicationContext(), UserListActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,44 +64,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         password.setOnKeyListener(this);
 
-
-
-    /*
-    ParseUser user = new ParseUser();
-
-    user.setUsername("krista");
-    user.setPassword("myPass");
-
-    user.signUpInBackground(new SignUpCallback() {
-        @Override
-        public void done(ParseException e) {
-            if(e == null){
-                // OK
-                Log.i("Sign Up OK!", "We did it");
-            } else {
-                e.printStackTrace();
-            }
+        if (ParseUser.getCurrentUser() != null) {
+            Log.i("Current User", ParseUser.getCurrentUser().getUsername());
+            showUserList();
         }
-    });
-    */
-
-//      ParseUser.logInInBackground("krista", "myPass", new LogInCallback() {
-//          @Override
-//          public void done(ParseUser user, ParseException e) {
-//              if (user != null){
-//                  Log.i("Success", "We Logged In");
-//              } else {
-//                  e.printStackTrace();
-//              }
-//          }
-//      });
-
-//        if (ParseUser.getCurrentUser().getUsername() != null) {
-//            Log.i("Signed In", ParseUser.getCurrentUser().getUsername());
-//        } else {
-//            Log.i("no luck", "not signed in");
-//        }
-
 
         ParseAnalytics.trackAppOpenedInBackground(getIntent());
     }
@@ -117,6 +89,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         if (e == null) {
                             // OK
                             Log.i("Sign Up Success!", username.getText().toString() + " has been signed up.");
+                            showUserList();
                         } else {
                             Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
@@ -129,6 +102,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     public void done(ParseUser user, ParseException e) {
                         if (user != null) {
                             Log.i("Login Success", username.getText().toString() + " logged in");
+                            showUserList();
                         } else {
                             Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
@@ -153,7 +127,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 signUpButton.setText("Sign Up");
                 login.setText("or, Login");
             }
-        } else if (view.getId() == R.id.logo || view.getId() == R.id.backgroundLayout){
+        } else if (view.getId() == R.id.logo || view.getId() == R.id.backgroundLayout) {
             InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
             inputMethodManager.hideSoftInputFromWindow(Objects.requireNonNull(getCurrentFocus()).getWindowToken(), 0);
         }
