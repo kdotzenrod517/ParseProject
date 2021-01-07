@@ -1609,6 +1609,7 @@ id seek_bar
 id seek_bar_controls
 id select_dialog_listview
 id selectionDetails
+id share
 id shortcut
 id showCustom
 id showHome
@@ -1755,6 +1756,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout wallet_test_layout
+menu share_menu
 mipmap camera
 mipmap ic_launcher
 string abc_action_bar_home_description
