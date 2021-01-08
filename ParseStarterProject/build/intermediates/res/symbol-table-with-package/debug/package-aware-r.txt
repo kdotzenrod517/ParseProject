@@ -972,6 +972,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable camera
 drawable cast_abc_scrubber_control_off_mtrl_alpha
 drawable cast_abc_scrubber_control_to_pressed_mtrl_000
 drawable cast_abc_scrubber_control_to_pressed_mtrl_005
@@ -1503,6 +1504,7 @@ id large_icon_uri
 id layout
 id left
 id light
+id linLayout
 id line1
 id line3
 id linear
@@ -1515,6 +1517,7 @@ id loading_indicator
 id login
 id logo
 id logo_only
+id logout
 id match_global_nicknames
 id match_parent
 id material
@@ -1719,6 +1722,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_user_feed
 layout activity_user_list
 layout cast_expanded_controller_activity
 layout cast_help_text

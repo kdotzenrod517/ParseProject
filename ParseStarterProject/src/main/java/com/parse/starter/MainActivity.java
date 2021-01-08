@@ -33,43 +33,15 @@ import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnKeyListener {
 
-
     Boolean signUpModeActive = true;
     TextView login;
     EditText username;
     EditText password;
     ImageView logo;
-    ConstraintLayout backgroundLayout;
 
     public void showUserList() {
         Intent intent = new Intent(getApplicationContext(), UserListActivity.class);
         startActivity(intent);
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        username = findViewById(R.id.username);
-        password = findViewById(R.id.password);
-        logo = findViewById(R.id.logo);
-        backgroundLayout = findViewById(R.id.backgroundLayout);
-
-        logo.setOnClickListener(this);
-        backgroundLayout.setOnClickListener(this);
-
-        login = findViewById(R.id.login);
-        login.setOnClickListener(this);
-
-        password.setOnKeyListener(this);
-
-        if (ParseUser.getCurrentUser() != null) {
-            Log.i("Current User", ParseUser.getCurrentUser().getUsername());
-            showUserList();
-        }
-
-        ParseAnalytics.trackAppOpenedInBackground(getIntent());
     }
 
     public void signUpClicked(View view) {
@@ -142,4 +114,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         return false;
     }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        setTitle("Instagram");
+
+        username = findViewById(R.id.username);
+        password = findViewById(R.id.password);
+        login = findViewById(R.id.login);
+        logo = findViewById(R.id.logo);
+        ConstraintLayout backgroundLayout = findViewById(R.id.backgroundLayout);
+
+        logo.setOnClickListener(this);
+        backgroundLayout.setOnClickListener(this);
+        login.setOnClickListener(this);
+        password.setOnKeyListener(this);
+
+        if (ParseUser.getCurrentUser().getUsername() != null) {
+            showUserList();
+        }
+
+        ParseAnalytics.trackAppOpenedInBackground(getIntent());
+    }
+
 }
